@@ -2,13 +2,16 @@
 
 We will make our code publicly available after it is accepted. Currently, we only release the binary code for reproducing the results. We provide various scripts for reproducing the dynamic workload results. By default, these scripts run all state-of-the-art (SOTA) methods under the same workload.
 
+## Hardware platform
+Ubuntu Linux server with an Intel(R) Xeon(R) 810 Gold 6152 CPU and 755 GB RAM
 
+## Scripts
 Write only after bulk loading
 
 ```
 for DATA in fb genome osm planet
 do
-	./test  \
+	./LEAST-ID378  \
 	--keys_file=../dataset/${DATA}  \
 	--cpu_id=40     \
 	--number_keys=200000000      \
@@ -26,7 +29,7 @@ Read only after bulk loading
 ```
 for DATA in fb genome osm planet
 do
-	./test  \
+	./LEAST-ID378  \
 	--keys_file=../dataset/${DATA}  \
 	--cpu_id=40     \
 	--number_keys=200000000      \
@@ -42,7 +45,7 @@ Read write after bulk loading
 ```
 for DATA in fb genome osm planet
 do
-	./test  \
+	./LEAST-ID378  \
 	--keys_file=../dataset/${DATA}  \
 	--cpu_id=40     \
 	--number_keys=200000000      \
