@@ -5,6 +5,10 @@ We will make our code publicly available after it is accepted. Currently, we onl
 ## Hardware platform
 Ubuntu Linux server with an Intel(R) Xeon(R) 810 Gold 6152 CPU and 755 GB RAM
 
+## Datasets
+For the datasets, please refer to the SOSD benchmark.
+https://github.com/learnedsystems/SOSD
+
 ## Scripts
 Write only after bulk loading
 
